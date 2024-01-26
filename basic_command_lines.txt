@@ -1,0 +1,24 @@
+ls – Displays information about files in the current directory.
+   ls -al : display with date creation
+	
+pwd – Displays the current working directory.
+mkdir – Creates a directory.
+cd – To navigate between different folders.
+rmdir – Removes empty directories from the directory lists.
+cp – Moves files from one directory to another.
+mv – Rename and Replace the files
+rm – Delete files 
+uname – Command to get basic information about the OS
+touch – Create empty files
+cat – Display file contents on terminal
+clear – Clear terminal 
+ps- Display the processes in terminal
+grep- Search for a specific string in an output
+echo- Display active processes on the terminal
+whoami- Create or update passwords for existing users
+sort- sort the file content
+wc – Check the lines, word count, and characters in a file using different options
+	wc -w shows the number of words
+	wc -l shows the number of lines
+	wc -m shows the number of characters present in a file
+ ls
