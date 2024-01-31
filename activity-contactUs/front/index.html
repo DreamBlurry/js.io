@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+</head>
+<body>
+    <form>
+        <tr>
+            <td><input type="text" id="fullName" value="" placeholder="Enter Full Name"><br></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" id="Addemail" value="" placeholder="Enter Email"><br></td>
+        </tr>
+
+        <tr>
+            <td><textarea  id="Addmessage" value="" cols="30" rows="10" placeholder="Enter your message"></textarea><br></td>
+        </tr>
+
+        <tr>
+            <button type="submit" onclick="submitRecord()" title="Submit Record">Submit</button>
+        </tr>
+    </form>
+
+<script>
+    function submitRecord() {
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('Addemail').value;
+        const message = document.getElementById('Addmessage').value;
+
+        const submitNewRec = {
+            FullName: fullName,
+            Email: email,
+            Message: message,
+        }
+
+       fetch('http://localhost:5000/addRecord', {
+           method: 'POST',
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(submitNewRec),
+
+            
+        });
+        
+        
+
+    }
+
+
+</script>
+
+</body>
+</html>
